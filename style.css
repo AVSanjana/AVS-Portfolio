@@ -709,3 +709,10 @@ button {
     border: 3px solid #8b5cf6;
     box-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
 }
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
