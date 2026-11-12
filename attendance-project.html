@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain-Based Student Attendance System | A V Sanjana</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    /* Fix invisible content on attendance project page */
+
+    .reveal {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        animation: none !important;
+    }
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">AVS<span>.</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Project Hero -->
+        <section class="section hero">
+            <div class="hero-content reveal">
+
+                <p class="eyebrow">EMBEDDED SYSTEMS · BLOCKCHAIN</p>
+
+                <h1>
+                    Student Attendance System
+                    <span class="gradient-text">Using Blockchain</span>
+                </h1>
+
+                <p class="hero-description">
+                    An automated attendance management system combining
+                    RFID-based student identification with blockchain
+                    technology for secure and tamper-resistant attendance
+                    records.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#overview" class="btn btn-primary">
+                        Explore Project ↓
+                    </a>
+
+                    <a href="assets/Student-Attendance-Blockchain-Report.pdf"
+                       class="btn btn-outline"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Project Report ↗
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section class="section" id="overview">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">01 / OVERVIEW</p>
+                <h2>About the <span class="gradient-text">Project</span></h2>
+            </div>
+
+            <div class="project-card reveal">
+                <p>
+                    Traditional attendance systems can be time-consuming,
+                    prone to manual errors and vulnerable to unauthorized
+                    modifications. This project proposes an automated
+                    attendance solution using RFID technology and blockchain.
+                </p>
+
+                <p>
+                    A Raspberry Pi 4 processes student RFID scans and
+                    communicates with a smart contract deployed on a local
+                    Ethereum blockchain using Ganache. An OLED display
+                    provides immediate feedback to the student.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Problem Statement -->
+        <section class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">02 / THE CHALLENGE</p>
+                <h2>Problem <span class="gradient-text">Statement</span></h2>
+            </div>
+
+            <div class="project-card reveal">
+                <p>
+                    Conventional attendance mechanisms may experience
+                    proxy attendance, manual recording errors, data
+                    manipulation and a lack of transparency.
+                </p>
+
+                <p>
+                    The project addresses these challenges by combining
+                    physical RFID-based identification with blockchain
+                    record-keeping to improve security, automation and
+                    accountability.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Technology Stack -->
+        <section class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">03 / TECHNOLOGY</p>
+                <h2>Tools & <span class="gradient-text">Components</span></h2>
+            </div>
+
+            <div class="project-tags reveal">
+                <span>Raspberry Pi 4</span>
+                <span>RFID RC522</span>
+                <span>OLED Display</span>
+                <span>Ganache</span>
+                <span>Ethereum Blockchain</span>
+                <span>Smart Contracts</span>
+                <span>SPI</span>
+                <span>I2C</span>
+            </div>
+
+        </section>
+
+        <!-- Working Methodology -->
+        <section class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">04 / WORKFLOW</p>
+                <h2>How the System <span class="gradient-text">Works</span></h2>
+            </div>
+
+            <div class="contributions-grid">
+
+                <div class="contribution-card reveal">
+                    <div class="contribution-icon">01</div>
+                    <h3>RFID Scanning</h3>
+                    <p>
+                        The student scans their RFID tag near the
+                        RFID RC522 reader.
+                    </p>
+                </div>
+
+                <div class="contribution-card reveal">
+                    <div class="contribution-icon">02</div>
+                    <h3>Data Processing</h3>
+                    <p>
+                        The Raspberry Pi 4 receives and processes
+                        the scanned RFID information.
+                    </p>
+                </div>
+
+                <div class="contribution-card reveal">
+                    <div class="contribution-icon">03</div>
+                    <h3>Blockchain Recording</h3>
+                    <p>
+                        Attendance information is sent to a smart
+                        contract on the Ganache Ethereum blockchain.
+                    </p>
+                </div>
+
+                <div class="contribution-card reveal">
+                    <div class="contribution-icon">04</div>
+                    <h3>OLED Feedback</h3>
+                    <p>
+                        The OLED display provides messages such as
+                        Attendance Marked or Access Denied.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Results -->
+        <section class="section">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">05 / RESULTS</p>
+                <h2>Project <span class="gradient-text">Outcomes</span></h2>
+            </div>
+
+            <div class="contributions-grid">
+
+                <div class="contribution-card reveal">
+                    <h3>97%</h3>
+                    <p>Successful RFID scans, as reported in the project report.</p>
+                </div>
+
+                <div class="contribution-card reveal">
+                    <h3>~1.5 Seconds</h3>
+                    <p>Reported transaction response time.</p>
+                </div>
+
+                <div class="contribution-card reveal">
+                    <h3>Secure Records</h3>
+                    <p>Blockchain-based attendance storage designed to prevent tampering.</p>
+                </div>
+
+                <div class="contribution-card reveal">
+                    <h3>Real-Time Feedback</h3>
+                    <p>OLED messages for successful, invalid and duplicate scans.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- My Contributions -->
+        <section class="section role-section" id="my-role">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">06 / MY CONTRIBUTION</p>
+                <h2>My Role & <span class="gradient-text">Responsibilities</span></h2>
+                <p class="section-description">
+                    An equally distributed contribution across the
+                    research, documentation, implementation and
+                    presentation phases.
+                </p>
+            </div>
+
+            <div class="contributions-grid">
+
+                <div class="contribution-card reveal">
+                    <div class="contribution-icon">01</div>
+                    <h3>Research</h3>
+                    <p>
+                        Contributed to exploring blockchain-based
+                        attendance solutions, reviewing existing
+                        approaches and understanding the proposed system.
+                    </p>
+                </div>
+
+                <div class="contribution-card reveal">
+                    <div class="contribution-icon">02</div>
+                    <h3>Documentation</h3>
+                    <p>
+                        Contributed to preparing the project report,
+                        technical explanations, methodology and
+                        system documentation.
+                    </p>
+                </div>
+
+                <div class="contribution-card reveal">
+                    <div class="contribution-icon">03</div>
+                    <h3>Implementation</h3>
+                    <p>
+                        Equally participated in the implementation
+                        activities involving the hardware components
+                        and blockchain-based attendance workflow.
+                    </p>
+                </div>
+
+                <div class="contribution-card reveal">
+                    <div class="contribution-icon">04</div>
+                    <h3>Presentation</h3>
+                    <p>
+                        Contributed to presenting the project,
+                        explaining its objectives, methodology,
+                        technologies and outcomes.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Report Link -->
+        <section class="section">
+            <div class="project-card reveal">
+                <p class="eyebrow">PROJECT DOCUMENTATION</p>
+                <h2>Explore the Complete Report</h2>
+                <p>
+                    Read the project report for detailed research,
+                    methodology, circuit connections, results and
+                    technical documentation.
+                </p>
+
+                <a href="assets/Student-Attendance-Blockchain-Report.pdf"
+                   class="btn btn-primary"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Full Project Report ↗
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 A V Sanjana. Designed with curiosity and creativity.</p>
+        <a href="index.html">Back to Portfolio ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
