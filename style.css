@@ -709,12 +709,15 @@ button {
     border: 3px solid #8b5cf6;
     box-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
 }
-
-.project-actions {
+.hero-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 20px;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero-actions a {
+    margin: 0;
 }
 
 /* My Role & Contributions */
@@ -759,5 +762,635 @@ button {
     .contributions-grid {
         grid-template-columns: 1fr;
     }
+}
+/* Project card button spacing */
+
+.project-card > a.btn {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.project-card .project-tags {
+    margin-bottom: 18px;
+}
+
+/* CREATIVE WRITING SECTION */
+
+
+/* =========================================
+   CREATIVE WRITING - BEYOND THE CODE
+========================================= */
+
+.writing-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Author Introduction */
+
+.author-intro {
+    max-width: 850px;
+    margin: 45px auto 85px;
+    padding: 45px 38px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        rgba(139, 92, 246, 0.10),
+        rgba(192, 132, 252, 0.035),
+        rgba(255, 255, 255, 0.015)
+    );
+    border: 1px solid rgba(192, 132, 252, 0.2);
+    border-radius: 22px;
+}
+
+.author-symbol {
+    font-size: 38px;
+    color: #c4a7ff;
+}
+
+.author-kicker {
+    color: #b9a0e9;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin: 18px 0;
+}
+
+.author-intro h3 {
+    font-family: Georgia, serif;
+    font-size: clamp(25px, 4vw, 35px);
+    font-weight: 400;
+    color: #f1eafa;
+    margin-bottom: 20px;
+}
+
+.author-intro p:not(.author-kicker) {
+    color: #b9b3c9;
+    line-height: 1.9;
+    margin: 12px 0;
+}
+
+.writing-profile-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+    padding: 14px 25px;
+    border-radius: 9px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    background: linear-gradient(120deg, #8b72d9, #6854b5);
+    transition: 0.3s ease;
+}
+
+.writing-profile-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(139, 114, 217, 0.25);
+}
+
+
+/* Story Collection Heading */
+
+.writing-collection {
+    margin-top: 50px;
+}
+
+.writing-collection-heading {
+    margin-bottom: 35px;
+}
+
+.writing-collection-heading h3 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 12px 0;
+}
+
+.writing-collection-heading > p:last-child {
+    color: #aaa5ba;
+}
+
+
+/* Story Cards */
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+.story-card {
+    overflow: hidden;
+    border: 1px solid rgba(192, 132, 252, 0.16);
+    border-radius: 17px;
+    background: rgba(255, 255, 255, 0.025);
+    transition: transform 0.35s ease,
+                border-color 0.35s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(192, 132, 252, 0.55);
+}
+
+
+/* CSS Book Covers */
+
+.story-cover {
+    min-height: 300px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-cover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        transparent 30%,
+        rgba(0, 0, 0, 0.35)
+    );
+    pointer-events: none;
+}
+
+.cover-one {
+    background:
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(255, 255, 255, 0.7),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #e7dfd2,
+            #c9bcae,
+            #85786f
+        );
+    color: #463c36;
+}
+
+.cover-two {
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            rgba(255, 174, 139, 0.65),
+            transparent 40%
+        ),
+        linear-gradient(
+            150deg,
+            #30263d,
+            #845b6a,
+            #292338
+        );
+    color: #fff0e8;
+}
+
+.cover-three {
+    background:
+        radial-gradient(
+            circle at 75% 30%,
+            rgba(142, 43, 66, 0.55),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #100e17,
+            #39202d,
+            #15131e
+        );
+    color: #f4e7eb;
+}
+
+.cover-author,
+.cover-category,
+.cover-title {
+    position: relative;
+    z-index: 1;
+}
+
+.cover-author {
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.cover-title {
+    display: flex;
+    flex-direction: column;
+    font-family: Georgia, serif;
+    font-size: clamp(27px, 2.5vw, 37px);
+    line-height: 1.25;
+    font-weight: 400;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+
+.cover-italic {
+    font-style: italic;
+}
+
+.cover-category {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+
+/* Story Information */
+
+.story-content {
+    padding: 25px;
+}
+
+.story-number {
+    color: #b49ae7;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.story-content h3 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 13px 0;
+    color: #eee8f5;
+}
+
+.story-description {
+    color: #aaa6b9;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* Genre Labels */
+
+.genre-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+.genre-list span {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    color: #d2c3ee;
+    background: rgba(167, 139, 250, 0.09);
+    border: 1px solid rgba(167, 139, 250, 0.15);
+}
+
+
+/* Story Metadata */
+
+.story-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 14px 0;
+    border-top: 1px solid rgba(255,255,255,0.09);
+    color: #aaa4ba;
+    font-size: 12px;
+}
+
+
+/* Wattpad Story Links */
+
+.story-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0 5px;
+    color: #c4a7ff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.story-link:hover {
+    color: white;
+}
+
+.story-link span {
+    font-size: 19px;
+}
+
+
+/* Closing Section */
+
+.writing-footer {
+    text-align: center;
+    margin-top: 85px;
+    padding: 45px 20px;
+    border-top: 1px solid rgba(192, 132, 252, 0.16);
+}
+
+.writing-footer > p {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #b49ae7;
+}
+
+.writing-footer h3 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin: 15px 0;
+    color: #eee8f5;
+}
+
+
+/* Responsive Layout */
+
+@media (max-width: 950px) {
+    .story-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .author-intro {
+        padding: 30px 22px;
+    }
+
+    .story-cover {
+        min-height: 330px;
+    }
+
+    .writing-footer {
+        margin-top: 55px;
+    }
+}
+
+/* =========================================
+   END CREATIVE WRITING SECTION
+========================================= */
+
+
+/* LIFE BEYOND WORK - SEPARATE PAGE */
+
+.personal-gallery-page {
+    padding: 65px 8%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.personal-gallery-heading {
+    text-align: center;
+    margin: 25px auto 45px;
+    max-width: 650px;
+}
+
+.personal-gallery-heading h1 {
+    font-size: clamp(34px, 5vw, 52px);
+    margin: 15px 0;
+}
+
+.personal-gallery-heading > p:last-child {
+    color: #aaa7b8;
+    line-height: 1.8;
+}
+
+/* Compact three-column gallery */
+
+.personal-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.personal-photo-grid figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 13px;
+    background: rgba(255,255,255,0.035);
+    border: 1px solid rgba(255,255,255,0.09);
+}
+
+.personal-photo-grid img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.personal-photo-grid figure:hover img {
+    transform: scale(1.05);
+}
+
+.personal-photo-grid figcaption {
+    padding: 12px;
+    color: #c5bbd6;
+    font-size: 13px;
+    text-align: center;
+}
+
+.gallery-back {
+    text-align: center;
+    margin: 45px 0 20px;
+}
+
+.gallery-back a {
+    color: #bba4f2;
+    text-decoration: none;
+}
+
+.gallery-back a:hover {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .personal-gallery-page {
+        padding: 45px 5%;
+    }
+
+    .personal-photo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .personal-photo-grid img {
+        height: 165px;
+    }
+}
+
+@media (max-width: 380px) {
+    .personal-photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .personal-photo-grid img {
+        height: 220px;
+    }
+}
+
+/* Smooth page entrance animation */
+body {
+    animation: pageFadeIn 0.8s ease-in-out;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Project card hover animation */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Life Beyond Work photo hover effect */
+.personal-photo-grid img {
+    transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.personal-photo-grid img:hover {
+    transform: scale(1.04);
+    filter: brightness(1.08);
+}
+
+/* Smooth scrolling throughout the website */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation hover effect */
+nav a {
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #8ab4ff;
+    transform: translateY(-2px);
+}
+
+/* Subtle futuristic button hover effect */
+button,
+.project-link,
+.story-link,
+.writing-profile-btn {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.project-link:hover,
+.story-link:hover,
+.writing-profile-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(100, 160, 255, 0.3);
+}
+
+/* Floating Back to Top button */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #8ab4ff;
+    color: #101522;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#backToTop:hover {
+    background: #ffffff;
+    transform: translateY(-4px);
+}
+
+/* Animated futuristic ambient background */
+body {
+    position: relative;
+    isolation: isolate;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(70, 120, 255, 0.12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(150, 80, 255, 0.10),
+            transparent 35%
+        );
+
+    animation: ambientGlow 12s ease-in-out infinite alternate;
+}
+
+@keyframes ambientGlow {
+    from {
+        background-position: 0% 0%, 100% 100%;
+    }
+
+    to {
+        background-position: 100% 100%, 0% 0%;
+    }
+}
+
+
+/* Minimal and elegant hero tagline */
+.hero-tagline {
+    font-size: clamp(22px, 2.2vw, 30px);
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 18px;
+}
+
+#typing-text {
+    display: inline;
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    background: none;
+    -webkit-text-fill-color: #a49aff;
+    color: #a49aff;
+}
+
+.typing-cursor {
+    font-size: 0.85em;
+    font-weight: 300;
+    color: #a49aff;
+    animation: cursorBlink 1s infinite;
 }
 

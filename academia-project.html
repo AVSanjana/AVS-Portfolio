@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authenticity Validator | A V Sanjana</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .project-page {
+            max-width: 1100px;
+            margin: auto;
+            padding: 120px 6% 70px;
+        }
+
+        .project-back {
+            color: #a78bfa;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 35px;
+        }
+
+        .project-heading {
+            margin-bottom: 45px;
+        }
+
+        .project-heading h1 {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            margin-bottom: 18px;
+        }
+
+        .project-heading p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            max-width: 800px;
+            color: #b9b9cc;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 22px;
+        }
+
+        .project-tags span {
+            padding: 9px 15px;
+            border: 1px solid #393052;
+            border-radius: 25px;
+            color: #c4b5fd;
+            font-size: 0.85rem;
+        }
+
+        .project-section {
+            margin: 55px 0;
+        }
+
+        .project-section h2 {
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+            color: #ffffff;
+        }
+
+        .project-section p,
+        .project-section li {
+            color: #b9b9cc;
+            line-height: 1.9;
+        }
+
+        .project-section ul {
+            padding-left: 22px;
+        }
+
+        .project-card {
+            background: rgba(255,255,255,0.035);
+            border: 1px solid #29263c;
+            border-radius: 16px;
+            padding: 25px;
+            margin-top: 18px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .project-grid .project-card {
+            margin-top: 0;
+        }
+
+        .project-card h3 {
+            color: #c4b5fd;
+            margin-bottom: 12px;
+        }
+
+        .role-highlight {
+            border-left: 3px solid #8b5cf6;
+        }
+
+        .project-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .project-buttons a {
+            text-decoration: none;
+        }
+
+        .project-footer {
+            text-align: center;
+            margin-top: 70px;
+            color: #9292a8;
+        }
+
+        @media (max-width: 650px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-page {
+                padding-top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="project-page">
+
+    <a href="index.html" class="project-back">
+        ← Back to Portfolio
+    </a>
+
+    <header class="project-heading">
+        <p>FEATURED ACADEMIC PROJECT</p>
+
+        <h1>Authenticity Validator
+            <span>for Academia</span>
+        </h1>
+
+        <p>
+            A technology-driven certificate verification system
+            designed to identify fake and tampered academic
+            documents through multiple layers of validation.
+        </p>
+
+        <div class="project-tags">
+            <span>Python</span>
+            <span>OCR</span>
+            <span>Artificial Intelligence</span>
+            <span>Image Processing</span>
+            <span>MySQL</span>
+            <span>Blockchain</span>
+        </div>
+    </header>
+
+    <section class="project-section">
+        <h2>01. Project Overview</h2>
+
+        <div class="project-card">
+            <p>
+                The increasing use of digital academic credentials
+                has also created challenges involving fake and
+                tampered certificates. Traditional verification
+                methods often require manual checks and can be
+                time-consuming.
+            </p>
+
+            <p>
+                This project proposes a web-based certificate
+                verification platform that combines image
+                compression, object detection, Optical Character
+                Recognition (OCR), Artificial Intelligence and
+                Blockchain to support automated document validation.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>02. Problem Statement</h2>
+
+        <p>
+            Fake academic certificates can affect educational
+            institutions, recruitment processes and the credibility
+            of professional qualifications. Manual verification
+            methods can be inefficient when handling large numbers
+            of documents.
+        </p>
+
+        <p>
+            The project addresses this challenge by proposing an
+            integrated approach to examine certificate information,
+            identify inconsistencies and verify document integrity.
+        </p>
+    </section>
+
+    <section class="project-section">
+        <h2>03. Proposed System & Workflow</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>01. Certificate Upload</h3>
+                <p>
+                    Users upload digital PDF certificates or
+                    scanned images for verification.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>02. Image Preprocessing</h3>
+                <p>
+                    Image compression and preprocessing help
+                    prepare certificate images for analysis.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>03. Object Detection</h3>
+                <p>
+                    Identifies important visual elements such
+                    as institutional logos, seals and signatures.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>04. OCR Extraction</h3>
+                <p>
+                    Extracts details such as student name,
+                    roll number, institution and course information.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>05. AI-Based Validation</h3>
+                <p>
+                    Analyses extracted information for patterns,
+                    formatting issues and possible anomalies.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>06. Blockchain Verification</h3>
+                <p>
+                    Uses certificate hashes and stored blockchain
+                    records to support tamper detection.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="project-card">
+            <h3>Final Verification Output</h3>
+            <p>
+                The system generates one of three outcomes:
+                Authenticated, Fraudulent or Needs Review.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>04. Technologies Used</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Python</h3>
+                <p>Programming language used in the system.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Gemini API</h3>
+                <p>Used for OCR and AI-based validation, as documented in the report.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>MySQL</h3>
+                <p>Database technology used for certificate records and extracted information.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Ethereum-based Blockchain</h3>
+                <p>Used for secure certificate hash verification.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Image Processing</h3>
+                <p>Supports image compression and preprocessing.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Object Detection</h3>
+                <p>Identifies important visual features in certificates.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>05. My Role & Contributions</h2>
+
+        <div class="project-card role-highlight">
+            <h3>Team Lead | Research & Documentation</h3>
+
+            <ul>
+                <li>Led and coordinated the project team.</li>
+                <li>Conducted research on academic certificate forgery
+                    and document authentication approaches.</li>
+                <li>Contributed to defining project objectives
+                    and organising the methodology.</li>
+                <li>Prepared technical documentation and the
+                    final project report.</li>
+                <li>Participated in project testing and reviewing
+                    system functionality.</li>
+                <li>Contributed to the project presentation and
+                    communication of its proposed solution.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>06. Testing & Results</h2>
+
+        <div class="project-card">
+            <p>
+                The report describes testing with genuine,
+                forged and tampered certificates, including
+                scanned documents and digital certificates.
+            </p>
+
+            <ul>
+                <li>Evaluated text extraction from certificate samples.</li>
+                <li>Examined visual features such as logos,
+                    signatures, seals and QR codes.</li>
+                <li>Reviewed the identification of document
+                    inconsistencies.</li>
+                <li>Evaluated blockchain-based certificate
+                    verification.</li>
+            </ul>
+
+            <p>
+                The report notes that blurred or noisy images
+                could cause minor OCR extraction errors.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>07. Project Documentation</h2>
+
+        <div class="project-card">
+            <h3>Final Year Project Report</h3>
+
+            <p>
+                Explore the complete project report for further
+                details about the research, proposed system,
+                methodology, implementation and result analysis.
+            </p>
+
+            <div class="project-buttons">
+                <a href="assets/Authenticity-Validator-Report.pdf"
+                   class="btn btn-primary"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Project Report ↗
+                </a>
+
+                <a href="index.html" class="btn btn-outline">
+                    Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="project-footer">
+        <p>Designed by A V Sanjana · 2026</p>
+    </footer>
+
+</main>
+
+</body>
+</html>

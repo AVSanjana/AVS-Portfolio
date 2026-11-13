@@ -39,3 +39,65 @@ document.querySelectorAll(".reveal").forEach(element => {
 // Automatically update copyright year
 document.getElementById("year").textContent =
     new Date().getFullYear();
+
+// Back to Top button
+const backToTop = document.getElementById("backToTop");
+
+if (backToTop) {
+    window.addEventListener("scroll", () => {
+        backToTop.style.display =
+            window.scrollY > 300 ? "block" : "none";
+    });
+
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
+
+// Hero tagline typing animation
+const typingText = document.getElementById("typing-text");
+
+if (typingText) {
+    const phrases = [
+        "Creating possibilities.",
+        "Building meaningful solutions.",
+        "Exploring new technologies.",
+        "Turning ideas into reality."
+    ];
+
+    let phraseIndex = 0;
+    let characterIndex = 0;
+    let deleting = false;
+
+    function typeEffect() {
+        const currentPhrase = phrases[phraseIndex];
+
+        if (deleting) {
+            characterIndex--;
+        } else {
+            characterIndex++;
+        }
+
+        typingText.textContent =
+            currentPhrase.substring(0, characterIndex);
+
+        let speed = deleting ? 45 : 85;
+
+        if (!deleting && characterIndex === currentPhrase.length) {
+            deleting = true;
+            speed = 1600;
+        } else if (deleting && characterIndex === 0) {
+            deleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            speed = 400;
+        }
+
+        setTimeout(typeEffect, speed);
+    }
+
+    typingText.textContent = "";
+    typeEffect();
+}
